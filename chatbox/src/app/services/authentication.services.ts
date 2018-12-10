@@ -13,7 +13,7 @@ export class AuthenticationService{
     this.http.post<any>(this.apiURL + '/register', {username: username, email: email, password: password})
       .subscribe(
         (response) => {
-          this.router.navigate(['/']);
+          this.router.navigate(['/chat']);
           localStorage.setItem("Token", response.token);
         },
         (error) => console.log(error)
@@ -25,7 +25,7 @@ export class AuthenticationService{
     this.http.post<any>(this.apiURL + '/login', {username: username, password: password})
       .subscribe(
         (response) => {
-          this.router.navigate(['/']);
+          this.router.navigate(['/chat']);
           localStorage.setItem("Token", response.token);
         },
         (error) => console.log(error)
@@ -34,6 +34,7 @@ export class AuthenticationService{
 
   logout(){
     localStorage.removeItem("Token")
+    this.router.navigate(['/']);
   }
 
   getToken(){

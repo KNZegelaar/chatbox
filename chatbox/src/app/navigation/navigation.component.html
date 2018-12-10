@@ -12,7 +12,7 @@
 
     <ng-template [ngIf]="authenticationService.isAuthenticated()">
       <ul class="nav navbar-nav navbar-right">
-        <li><a (click)="authenticationService.logout()"> Logout </a></li>
+        <li><a (click)="authenticationService.logout()" style="cursor: pointer"> Logout </a></li>
       </ul>
     </ng-template>
 

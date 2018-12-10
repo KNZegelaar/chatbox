@@ -1,0 +1,9 @@
+<form (ngSubmit)="onLogin()" #f="ngForm">
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <input type="name" id="name" name="name" ngModel class="form-control" required #name="ngModel"
+             placeholder="please enter a name for your new chat">
+    </div>
+    <button class="btn btn-primary col-sm-2 col-form-label" type="submit" [disabled]="!f.valid">Create a new chat</button>
+  </div>
+</form>

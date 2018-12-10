@@ -7,10 +7,18 @@ import { SigninComponent } from './authentication/signin/signin.component';
 import { SignupComponent } from './authentication/signup/signup.component';
 import { FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { ChatComponent } from './chat/chat.component';
+import { CreateChatComponent } from './chat/create-chat/create-chat.component';
+import { ShowChatComponent } from './chat/show-chat/show-chat.component';
+import { AuthenticationGuard} from "./services/authenticationGuard.services";
+import { AuthenticationService} from "./services/authentication.services";
 
+
+//TODO: canActivate: [true] --> this makes sure the page cannot be loaded when the user isn't logged in.
 const appRoutes: Routes = [
   { path: 'login', component: SigninComponent },
-  { path: 'register', component: SignupComponent }
+  { path: 'register', component: SignupComponent },
+  { path: 'chat', component: ChatComponent, canActivate: [AuthenticationGuard]}
 ];
 
 @NgModule({
@@ -18,7 +26,10 @@ const appRoutes: Routes = [
     AppComponent,
     NavigationComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    ChatComponent,
+    CreateChatComponent,
+    ShowChatComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +37,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [AuthenticationService, AuthenticationGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
