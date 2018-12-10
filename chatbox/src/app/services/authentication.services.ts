@@ -4,7 +4,6 @@ import {HttpClient} from "@angular/common/http";
 @Injectable()
 export class AuthenticationService{
   private apiURL = 'http://localhost:27018/api';
-  private token = null;
 
   constructor(private http: HttpClient){}
 
@@ -13,8 +12,7 @@ export class AuthenticationService{
     this.http.post<any>(this.apiURL + '/register', {username: username, email: email, password: password})
       .subscribe(
         (response) => {
-          this.token = response.token;
-          console.log("Token: " + this.token);
+          localStorage.setItem("Token", response.token);
         },
         (error) => console.log(error)
       );
@@ -25,14 +23,21 @@ export class AuthenticationService{
     this.http.post<any>(this.apiURL + '/login', {username: username, password: password})
       .subscribe(
         (response) => {
-          this.token = response.token;
-          console.log("Token: " + this.token);
+          localStorage.setItem("Token", response.token);
         },
         (error) => console.log(error)
       );
   }
 
+  logout(){
+    localStorage.removeItem("Token")
+  }
+
   getToken(){
-    return this.token;
+    return localStorage.getItem("Token");
+  }
+
+  isAuthenticated(){
+    return localStorage.getItem("Token") != null;
   }
 }

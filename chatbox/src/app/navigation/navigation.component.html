@@ -3,8 +3,18 @@
     <div class="navbar-header">
       <a routerLink="/" class="navbar-brand"><b>{{title}}</b></a>
     </div>
+    
+    <ng-template [ngIf]="!authenticationService.isAuthenticated()">
       <ul class="nav navbar-nav navbar-right">
         <li><a routerLink="/login"> Login </a></li>
       </ul>
+    </ng-template>
+
+    <ng-template [ngIf]="authenticationService.isAuthenticated()">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a (click)="authenticationService.logout()"> Logout </a></li>
+      </ul>
+    </ng-template>
+
   </div>
 </nav>
