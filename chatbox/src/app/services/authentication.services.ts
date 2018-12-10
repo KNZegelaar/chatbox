@@ -1,17 +1,19 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
+import {Router} from "@angular/router";
 
 @Injectable()
 export class AuthenticationService{
   private apiURL = 'http://localhost:27018/api';
 
-  constructor(private http: HttpClient){}
+  constructor(private http: HttpClient, private router: Router){}
 
   register(username: String, email: String, password: String){
     console.log("Register: " + username + " has been registered");
     this.http.post<any>(this.apiURL + '/register', {username: username, email: email, password: password})
       .subscribe(
         (response) => {
+          this.router.navigate(['/']);
           localStorage.setItem("Token", response.token);
         },
         (error) => console.log(error)
@@ -23,6 +25,7 @@ export class AuthenticationService{
     this.http.post<any>(this.apiURL + '/login', {username: username, password: password})
       .subscribe(
         (response) => {
+          this.router.navigate(['/']);
           localStorage.setItem("Token", response.token);
         },
         (error) => console.log(error)
