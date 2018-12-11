@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1dde1ed4-aa29-48d9-811c-a6828c2b32ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbox/src/app/services/authentication.services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/src/app/services/authentication.services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbox/src/app/services/chat.services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/src/app/services/chat.services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbox/src/app/services/message.services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/src/app/services/message.services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -62,20 +64,52 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chatbox/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102" />
+            <state relative-caret-position="255">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/services/hideLogin.services.ts">
+        <entry file="file://$PROJECT_DIR$/chatbox/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="323">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
-                <element signature="e#0#89#0" expanded="true" />
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chatbox/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="41" column="13" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#ng-template#1;n#div#0;n#nav#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,43 +119,10 @@
         <entry file="file://$PROJECT_DIR$/chatbox/src/app/services/chat.services.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="65" lean-forward="true" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+              <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/services/authentication.services.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="44" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/detailview-chat/detailview-chat.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/message/message.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -151,7 +152,6 @@
         <option value="$PROJECT_DIR$/chatbox/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/chatbox/src/app/authentication/signin/signin.component.ts" />
         <option value="$PROJECT_DIR$/chatbox/src/app/authentication/signup/signup.component.ts" />
-        <option value="$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.ts" />
         <option value="$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.html" />
         <option value="$PROJECT_DIR$/chatbox/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/chatbox/src/app/services/authenticationGuard.services.ts" />
@@ -178,6 +178,10 @@
         <option value="$PROJECT_DIR$/chatbox/src/app/services/chat.services.ts" />
         <option value="$PROJECT_DIR$/chatbox/src/app/services/authentication.services.ts" />
         <option value="$PROJECT_DIR$/chatbox/src/app/services/message.services.ts" />
+        <option value="$PROJECT_DIR$/chatbox/package.json" />
+        <option value="$PROJECT_DIR$/chatbox/server.js" />
+        <option value="$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.ts" />
+        <option value="$PROJECT_DIR$/chatbox/.gitignore" />
       </list>
     </option>
   </component>
@@ -223,77 +227,7 @@
               <item name="chatbox" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="signin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="signup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="create-chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="detailview-chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-              <item name="show-chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-              <item name="create-message" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chatbox" type="b2602c69:ProjectViewProjectNode" />
@@ -302,14 +236,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="navigation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -370,7 +296,7 @@
       <workItem from="1544351135139" duration="9154000" />
       <workItem from="1544453889929" duration="24200000" />
       <workItem from="1544530810804" duration="19921000" />
-      <workItem from="1544562150211" duration="1339000" />
+      <workItem from="1544562150211" duration="2666000" />
     </task>
     <servers />
   </component>
@@ -380,7 +306,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73273000" />
+    <option name="totallyTimeSpent" value="74600000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -476,26 +402,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/detailview-chat/detailview-chat.component.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#ng-template#1;n#div#0;n#nav#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chatbox/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -656,7 +562,7 @@
     <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/detailview-chat/detailview-chat.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
@@ -686,7 +592,7 @@
     <entry file="file://$PROJECT_DIR$/chatbox/src/app/services/chat.services.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="65" lean-forward="true" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -731,7 +637,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chatbox/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
+        <state relative-caret-position="255">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbox/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#ng-template#1;n#div#0;n#nav#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbox/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="13" />
+        </state>
       </provider>
     </entry>
   </component>
