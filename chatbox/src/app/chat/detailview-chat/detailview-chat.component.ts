@@ -24,7 +24,7 @@ export class DetailviewChatComponent implements OnInit {
       this.chatService.getOneChat(param['chatId'])
         .subscribe((response) => {
             const username = response.creator.username;
-            response.creator =username;
+            response.creator = username;
             this.chat = response;
           },
           (error) => {

@@ -14,8 +14,7 @@ export class ChatService {
   createChat(title: String, description: String) {
     this.http.post<Chat>(this.apiURL + '/chat', {title, description}, this.headers)
       .subscribe(
-        (response) => {
-          console.log("CHAT:" + response);
+        () => {
         },
         (error) => console.log(error)
       );

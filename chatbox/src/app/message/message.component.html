@@ -1,2 +1,2 @@
-<app-show-message></app-show-message>
-<app-create-message></app-create-message>
+<app-show-message *ngFor="let messageEl of messages" [message]="messageEl"></app-show-message>
+<app-create-message (messageCreated)="onMessageCreated()"></app-create-message>
