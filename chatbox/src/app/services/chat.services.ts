@@ -5,7 +5,7 @@ import {Chat} from "../chat/show-chat/chat.model";
 
 @Injectable()
 export class ChatService {
-  private apiURL = 'http://localhost:27018/api';
+  private apiURL = 'https://protected-garden-83168.herokuapp.com/api';
   private headers = {headers: {'X-Access-Token': localStorage.getItem("Token")}};
 
   constructor(private http: HttpClient, private router: Router) {

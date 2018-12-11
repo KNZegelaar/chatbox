@@ -4,7 +4,7 @@ import {Router} from "@angular/router";
 
 @Injectable()
 export class AuthenticationService{
-  private apiURL = 'http://localhost:27018/api';
+  private apiURL = 'https://protected-garden-83168.herokuapp.com/api';
 
   constructor(private http: HttpClient, private router: Router){}
 
