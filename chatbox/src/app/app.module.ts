@@ -12,12 +12,14 @@ import { CreateChatComponent } from './chat/create-chat/create-chat.component';
 import { ShowChatComponent } from './chat/show-chat/show-chat.component';
 import { AuthenticationGuard} from "./services/authenticationGuard.services";
 import { AuthenticationService} from "./services/authentication.services";
+import {HideLoginServices} from "./services/hideLogin.services";
 
 
 //TODO: canActivate: [true] --> this makes sure the page cannot be loaded when the user isn't logged in.
 const appRoutes: Routes = [
-  { path: 'login', component: SigninComponent },
-  { path: 'register', component: SignupComponent },
+  { path: '', component: SigninComponent, canActivate: [HideLoginServices]},
+  { path: 'login', component: SigninComponent, canActivate: [HideLoginServices]},
+  { path: 'register', component: SignupComponent, canActivate: [HideLoginServices] },
   { path: 'chat', component: ChatComponent, canActivate: [AuthenticationGuard]}
 ];
 
@@ -37,7 +39,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [AuthenticationService, AuthenticationGuard],
+  providers: [AuthenticationService, AuthenticationGuard, HideLoginServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
