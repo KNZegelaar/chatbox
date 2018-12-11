@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1dde1ed4-aa29-48d9-811c-a6828c2b32ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/services/chat.services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/src/app/services/chat.services.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,54 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/app.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/app.component.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/chat.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/authentication/signin/signin.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chatbox/src/app/services/authenticationGuard.services.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="238">
+              <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -100,13 +53,63 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="220">
+              <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chatbox/src/app/services/chat.services.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/show-chat/chat.model.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -149,18 +152,18 @@
         <option value="$PROJECT_DIR$/chatbox/src/app/authentication/signup/signup.component.ts" />
         <option value="$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.ts" />
         <option value="$PROJECT_DIR$/chatbox/src/app/services/authentication.services.ts" />
-        <option value="$PROJECT_DIR$/chatbox/src/app/chat/show-chat/chat.model.ts" />
         <option value="$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.html" />
-        <option value="$PROJECT_DIR$/chatbox/src/app/services/chat.services.ts" />
-        <option value="$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.ts" />
-        <option value="$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.ts" />
         <option value="$PROJECT_DIR$/chatbox/src/app/chat/chat.component.html" />
-        <option value="$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.html" />
         <option value="$PROJECT_DIR$/chatbox/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/chatbox/src/app/services/authenticationGuard.services.ts" />
         <option value="$PROJECT_DIR$/chatbox/src/app/services/hideLogin.services.ts" />
         <option value="$PROJECT_DIR$/chatbox/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.html" />
+        <option value="$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.html" />
+        <option value="$PROJECT_DIR$/chatbox/src/app/services/chat.services.ts" />
+        <option value="$PROJECT_DIR$/chatbox/src/app/chat/show-chat/chat.model.ts" />
+        <option value="$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.ts" />
+        <option value="$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.ts" />
       </list>
     </option>
   </component>
@@ -333,7 +336,7 @@
       <workItem from="1544301194727" duration="7759000" />
       <workItem from="1544351135139" duration="9154000" />
       <workItem from="1544453889929" duration="24200000" />
-      <workItem from="1544530810804" duration="1181000" />
+      <workItem from="1544530810804" duration="4809000" />
     </task>
     <servers />
   </component>
@@ -343,7 +346,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53194000" />
+    <option name="totallyTimeSpent" value="56822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -400,13 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/show-chat/chat.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chatbox/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -427,19 +423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/chatbox/src/app/authentication/signup/signup.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -457,16 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -481,16 +454,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chatbox/src/app/services/chat.services.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -559,16 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chatbox/src/app/services/hideLogin.services.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -579,10 +532,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chatbox/src/app/services/chat.services.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/show-chat/chat.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="220">
+          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

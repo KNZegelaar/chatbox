@@ -1,24 +1,38 @@
 import { Component, OnInit } from '@angular/core';
 import {Chat} from "./chat.model";
+import {ChatService} from "../../services/chat.services";
 
 @Component({
   selector: 'app-show-chat',
   templateUrl: './show-chat.component.html',
-  styleUrls: ['./show-chat.component.css']
+  styleUrls: ['./show-chat.component.css'],
+  providers: [ChatService]
 })
 export class ShowChatComponent implements OnInit {
-  chats: Chat[] = [
-    new Chat("Chat 1", "Username 1" , " This is the description of chat 1"),
-    new Chat("Chat 2", "Username 2" , " This is the description of chat 2"),
-    new Chat("Chat 3", "Username 3" , " This is the description of chat 3"),
-    new Chat("Chat 4", "Username 4" , " This is the description of chat 4"),
-    new Chat("Chat 5", "Username 5" , " This is the description of chat 5")
-  ];
+  chats: Chat[];
 
 
-  constructor() { }
+  constructor(private chatService: ChatService) {
+    this.showChats();
+  }
 
   ngOnInit() {
+  }
+
+  showChats(){
+    this.chatService.getAllChats()
+      .subscribe((response) => {
+        for(let chat of response.chats){
+          const username = chat.creator.username;
+          chat.creator = username;
+        }
+        this.chats = response.chats;
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+
   }
 
 }
