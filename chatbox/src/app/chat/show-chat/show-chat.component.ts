@@ -8,30 +8,11 @@ import {Chat} from "./chat.model";
 })
 export class ShowChatComponent implements OnInit {
   @Input() chat: Chat;
-  // chats: Chat[];
-
 
   constructor() {
-    // this.showChats();
   }
 
   ngOnInit() {
   }
-
-  // showChats(){
-  //   this.chatService.getAllChats()
-  //     .subscribe((response) => {
-  //       for(let chat of response.chats){
-  //         const username = chat.creator.username;
-  //         chat.creator = username;
-  //       }
-  //       this.chats = response.chats;
-  //     },
-  //     (error) => {
-  //       console.log(error);
-  //     }
-  //   );
-  //
-  // }
 
 }

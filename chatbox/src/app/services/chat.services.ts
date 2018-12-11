@@ -25,4 +25,8 @@ export class ChatService {
     return this.http.get<any>(this.apiURL + '/chat/all', this.headers);
   }
 
+  getOneChat(_id: String){
+    return this.http.get<any>(this.apiURL + '/chat/' + _id, this.headers);
+  }
+
 }
