@@ -3,11 +3,73 @@
   <component name="ChangeListManager">
     <list default="true" id="1dde1ed4-aa29-48d9-811c-a6828c2b32ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbox/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbox/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbox/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbox/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/e2e/tsconfig.e2e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/authentication/signin/signin.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/authentication/signin/signin.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/authentication/signin/signin.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/authentication/signup/signup.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/authentication/signup/signup.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/authentication/signup/signup.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/chat.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/chat.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/chat.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/create-chat/create-chat.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/detailview-chat/detailview-chat.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/detailview-chat/detailview-chat.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/detailview-chat/detailview-chat.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/show-chat/chat.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/chat/show-chat/show-chat.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/message/create-message/create-message.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/message/create-message/create-message.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/message/create-message/create-message.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/message/message.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/message/message.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/message/message.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/message/message.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/message/show-message/show-message.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/message/show-message/show-message.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/message/show-message/show-message.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/services/authentication.services.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/services/authenticationGuard.services.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/services/chat.services.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/services/hideLogin.services.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/app/services/message.services.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/src/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbox/tslint.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,109 +82,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/services/message.services.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/app.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/main.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chatbox/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="41" column="13" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#ng-template#1;n#div#0;n#nav#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chatbox/src/app/services/chat.services.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="509">
+              <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -208,35 +172,6 @@
               <item name="chatbox" type="462c0819:PsiDirectoryNode" />
               <item name="chatbox" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="chatbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="chatbox" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="navigation" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -248,6 +183,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/angular-ivt2-workinprogress" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="ts.external.directory.path" value="C:\Users\kelly\Documents\Avans\Jaar_2\Client-side_web_programming\chatbox\chatbox\node_modules\typescript\lib" />
   </component>
@@ -296,7 +232,7 @@
       <workItem from="1544351135139" duration="9154000" />
       <workItem from="1544453889929" duration="24200000" />
       <workItem from="1544530810804" duration="19921000" />
-      <workItem from="1544562150211" duration="2666000" />
+      <workItem from="1544562150211" duration="2973000" />
     </task>
     <servers />
   </component>
@@ -306,13 +242,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74600000" />
+    <option name="totallyTimeSpent" value="74907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -325,7 +260,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -642,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chatbox/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chatbox/src/app/navigation/navigation.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -669,10 +597,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chatbox/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chatbox/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="13" />
+        <state relative-caret-position="509">
+          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
         </state>
       </provider>
     </entry>
