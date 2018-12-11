@@ -13,6 +13,7 @@ import { ShowChatComponent } from './chat/show-chat/show-chat.component';
 import { AuthenticationGuard} from "./services/authenticationGuard.services";
 import { AuthenticationService} from "./services/authentication.services";
 import {HideLoginServices} from "./services/hideLogin.services";
+import { DetailviewChatComponent } from './chat/detailview-chat/detailview-chat.component';
 
 
 //TODO: canActivate: [true] --> this makes sure the page cannot be loaded when the user isn't logged in.
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     SignupComponent,
     ChatComponent,
     CreateChatComponent,
-    ShowChatComponent
+    ShowChatComponent,
+    DetailviewChatComponent
   ],
   imports: [
     BrowserModule,
