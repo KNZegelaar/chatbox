@@ -28,6 +28,10 @@ export class MessageComponent implements OnInit {
       this.chatService.getOneChat(param['chatId'])
         .subscribe((response) => {
               console.log(response.messages);
+              for(let message of response.messages){
+                const date = new Date(message.timeStamp);
+                message.timeStamp = date.toDateString() + " at " + date.toLocaleTimeString();
+              }
               this.messages = response.messages;
           },
           (error) => {
