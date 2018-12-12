@@ -6,6 +6,7 @@ import {NgForm} from "@angular/forms";
   selector: 'app-create-chat',
   templateUrl: './create-chat.component.html',
   styleUrls: [
+    '../../app.component.css',
     './create-chat.component.css'],
   providers: [ChatService]
 })

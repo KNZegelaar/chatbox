@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+input.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+
+.alerttext{
+  color: red;
+}
+
+.createbox{
+  background-color: #c9dbf3;
+}
+
+.message{
+  background-color: #fae5c7;
+}
+
+.chat{
+  background-color: #85b9a4;
+}
+
+.sign{
+  background-color: #eeeeee;
+}

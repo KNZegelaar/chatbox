@@ -6,7 +6,9 @@ import {ChatService} from "../../services/chat.services";
 @Component({
   selector: 'app-detailview-chat',
   templateUrl: './detailview-chat.component.html',
-  styleUrls: ['./detailview-chat.component.css'],
+  styleUrls: [
+    '../../app.component.css',
+    './detailview-chat.component.css'],
   providers: [ChatService]
 })
 export class DetailviewChatComponent implements OnInit {

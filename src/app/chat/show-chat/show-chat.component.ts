@@ -4,7 +4,9 @@ import {Chat} from "./chat.model";
 @Component({
   selector: 'app-show-chat',
   templateUrl: './show-chat.component.html',
-  styleUrls: ['./show-chat.component.css'],
+  styleUrls: [
+    '../../app.component.css',
+    './show-chat.component.css'],
 })
 export class ShowChatComponent implements OnInit {
   @Input() chat: Chat;

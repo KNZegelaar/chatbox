@@ -12,6 +12,7 @@ import {AuthenticationService} from "../../services/authentication.services";
 })
 export class SignupComponent implements OnInit {
   @ViewChild('f') singinForm: NgForm;
+  errorcode: Number;
 
   constructor(private authenticationService: AuthenticationService) { }
 
@@ -19,7 +20,7 @@ export class SignupComponent implements OnInit {
   }
 
   onRegister(){
-    this.authenticationService.register(this.singinForm.value.username, this.singinForm.value.email, this.singinForm.value.password);
+    this.errorcode = this.authenticationService.register(this.singinForm.value.username, this.singinForm.value.email, this.singinForm.value.password);
   }
 
 }
