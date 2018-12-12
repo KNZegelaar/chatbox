@@ -14,9 +14,15 @@ export class AuthenticationService{
         (response) => {
           this.router.navigate(['/chat']);
           localStorage.setItem("Token", response.token);
+          return 200;
         },
-        (error) => console.log(error)
+        (error) => {
+          console.log(error);
+          return 420;
+        }
       );
+
+    return 420;
   }
 
   login(username: String, password: String){

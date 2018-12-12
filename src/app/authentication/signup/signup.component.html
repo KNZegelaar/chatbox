@@ -16,6 +16,9 @@
         <input type="password" id="password" name="password" ngModel class="form-control" required #password="ngModel">
         <span class="help-block" *ngIf="!password.valid && password.touched">Please enter a valid password</span>
       </div>
+      <div>
+        <span class="alerttext" *ngIf="errorcode == 420">The username is already taken</span>
+      </div>
       <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Sign up</button>
       <p><br/>Already have an account? Please <a routerLink="/login"> sign in</a>.</p>
     </form>

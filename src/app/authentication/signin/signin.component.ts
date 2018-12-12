@@ -22,6 +22,5 @@ export class SigninComponent implements OnInit {
 
   onLogin() {
     this.errorcode = this.authenticationService.login(this.singinForm.value.username, this.singinForm.value.password);
-    console.log(this.errorcode);
   }
 }
