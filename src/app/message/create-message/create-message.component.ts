@@ -6,7 +6,9 @@ import {NgForm} from "@angular/forms";
 @Component({
   selector: 'app-create-message',
   templateUrl: './create-message.component.html',
-  styleUrls: ['./create-message.component.css'],
+  styleUrls: [
+    '../../app.component.css',
+    './create-message.component.css'],
   providers: [MessageService]
 })
 export class CreateMessageComponent implements OnInit {

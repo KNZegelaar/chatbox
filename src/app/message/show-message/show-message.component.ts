@@ -4,7 +4,9 @@ import {Message} from "../message.model";
 @Component({
   selector: 'app-show-message',
   templateUrl: './show-message.component.html',
-  styleUrls: ['./show-message.component.css']
+  styleUrls: [
+    '../../app.component.css',
+    './show-message.component.css']
 })
 export class ShowMessageComponent implements OnInit {
   @Input() message: Message;
