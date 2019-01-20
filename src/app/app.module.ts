@@ -17,6 +17,7 @@ import { DetailviewChatComponent } from './chat/detailview-chat/detailview-chat.
 import { MessageComponent } from './message/message.component';
 import { CreateMessageComponent } from './message/create-message/create-message.component';
 import { ShowMessageComponent } from './message/show-message/show-message.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 //TODO: canActivate: [true] --> this makes sure the page cannot be loaded when the user isn't logged in.
@@ -45,6 +46,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
+    NgbModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],

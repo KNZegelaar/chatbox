@@ -13,19 +13,7 @@ export class AuthenticationService{
   }
 
   login(username: String, password: String){
-    this.http.post<any>(this.apiURL + '/login', {username: username, password: password})
-      .subscribe(
-        (response) => {
-          this.router.navigate(['/chat']);
-          localStorage.setItem("Token", response.token);
-          return 200;
-        },
-        (error) => {
-          console.log(error);
-          return error.code;
-        }
-      );
-    return 401;
+    return this.http.post<any>(this.apiURL + '/login', {username: username, password: password});
   }
 
   logout(){
