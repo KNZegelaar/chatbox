@@ -12,12 +12,7 @@ export class ChatService {
   }
 
   createChat(title: String, description: String) {
-    this.http.post<Chat>(this.apiURL + '/chat', {title, description}, this.headers)
-      .subscribe(
-        () => {
-        },
-        (error) => console.log(error)
-      );
+    return this.http.post<Chat>(this.apiURL + '/chat', {title, description}, this.headers);
   }
 
   getAllChats() {

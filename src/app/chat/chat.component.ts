@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import {Chat} from "./show-chat/chat.model";
-import {ChatService} from "../services/chat.services";
+import {Component, OnInit} from '@angular/core';
+import {Chat} from './show-chat/chat.model';
+import {ChatService} from '../services/chat.services';
 
 @Component({
   selector: 'app-chat',
@@ -26,8 +26,7 @@ export class ChatComponent implements OnInit {
     this.chatService.getAllChats()
       .subscribe((response) => {
         for(let chat of response.chats){
-          const username = chat.creator.username;
-          chat.creator = username;
+          chat.creator = chat.creator.username;
         }
         this.chats = response.chats;
       },

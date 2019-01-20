@@ -8,7 +8,7 @@ import {AuthenticationService} from "../services/authentication.services";
   providers: [AuthenticationService]
 })
 export class NavigationComponent implements OnInit {
- @Input() title: String;
+  @Input() title: String;
   constructor(public authenticationService: AuthenticationService) { }
 
   ngOnInit() {

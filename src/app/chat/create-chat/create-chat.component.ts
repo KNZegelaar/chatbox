@@ -20,7 +20,13 @@ export class CreateChatComponent implements OnInit {
   }
 
   onCreate(){
-    this.chatService.createChat(this.createChatForm.value.name, this.createChatForm.value.description);
-    this.chatCreated.emit();
+    this.chatService.createChat(this.createChatForm.value.name, this.createChatForm.value.description)
+      .subscribe(
+        (response) => {
+          this.chatCreated.emit();
+        },
+        (error) => console.log(error)
+      );;
+
   }
 }

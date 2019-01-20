@@ -9,20 +9,7 @@ export class AuthenticationService{
   constructor(private http: HttpClient, private router: Router){}
 
   register(username: String, email: String, password: String){
-    this.http.post<any>(this.apiURL + '/register', {username: username, email: email, password: password})
-      .subscribe(
-        (response) => {
-          this.router.navigate(['/chat']);
-          localStorage.setItem("Token", response.token);
-          return 200;
-        },
-        (error) => {
-          console.log(error);
-          return 420;
-        }
-      );
-
-    return 420;
+    return this.http.post<any>(this.apiURL + '/register', {username: username, email: email, password: password});
   }
 
   login(username: String, password: String){
@@ -42,12 +29,8 @@ export class AuthenticationService{
   }
 
   logout(){
-    localStorage.removeItem("Token")
+    localStorage.removeItem("Token");
     this.router.navigate(['/']);
-  }
-
-  getToken(){
-    return localStorage.getItem("Token");
   }
 
   isAuthenticated(){

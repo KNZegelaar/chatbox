@@ -25,6 +25,7 @@ export class DetailviewChatComponent implements OnInit {
     this.route.params.subscribe(param => {
       this.chatService.getOneChat(param['chatId'])
         .subscribe((response) => {
+          console.log(response);
             const username = response.creator.username;
             response.creator = username;
             this.chat = response;

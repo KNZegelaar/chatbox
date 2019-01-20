@@ -28,8 +28,7 @@ export class CreateMessageComponent implements OnInit {
             this.messageCreated.emit();
           },
           (error) => console.log(error)
-        );;
-
+        );
     });
 
   }
