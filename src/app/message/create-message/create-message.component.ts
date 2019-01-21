@@ -25,6 +25,7 @@ export class CreateMessageComponent implements OnInit {
       this.messageService.createMessage(this.createChatForm.value.content,param['chatId'])
         .subscribe(
           (response) => {
+            this.createChatForm.reset();
             this.messageCreated.emit();
           },
           (error) => console.log(error)

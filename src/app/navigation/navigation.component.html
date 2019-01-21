@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default shadowUnderneathObject">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a routerLink="/chat" class="navbar-brand"><b>{{title}}</b></a>
+      <a routerLink="/chat" class="navbar-brand"> <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> <b> {{title}}</b></a>
     </div>
 
     <ng-template [ngIf]="!authenticationService.isAuthenticated()">
@@ -12,7 +12,8 @@
 
     <ng-template [ngIf]="authenticationService.isAuthenticated()">
       <ul class="nav navbar-nav navbar-right">
-        <li><a routerLink="/chat"> my chats </a></li>
+        <li><a routerLink="/chat"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  my chats </a></li>
+        <li><a><span class="glyphicon glyphicon-user" aria-hidden="true"> Welcome {{username}}</span></a> </li>
         <li><a (click)="authenticationService.logout()" style="cursor: pointer"> Logout </a></li>
       </ul>
     </ng-template>

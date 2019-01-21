@@ -1,5 +1,5 @@
-<div class="thumbnail clearfix createbox">
-    <form (ngSubmit)="onCreate()" #f="ngForm">
+<div class="thumbnail clearfix createbox card">
+    <form class="col-sm-12" (ngSubmit)="onCreate()" #f="ngForm">
       <div class="form-group">
         <label for="name">Name</label>
         <input type="name" id="name" name="name" ngModel class="form-control" required #name="ngModel"
@@ -11,7 +11,7 @@
                #description="ngModel"
                placeholder="please enter a description for your new chat">
       </div>
-      <button class="btn btn-primary" style="width: 100%" type="submit" [disabled]="!f.valid">Create a new chat
+      <button class="btn btn-primary createbox button" style="width: 100%" type="submit" [disabled]="!f.valid">Create a new chat
       </button>
     </form>
 </div>

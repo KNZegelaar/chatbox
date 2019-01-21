@@ -8,19 +8,27 @@ input.ng-invalid.ng-touched{
 }
 
 .createbox{
-  background-color: #c9dbf3;
+  background-color: #B0E6E9;
+}
+
+.createbox.button{
+  background-color: #2C7174;
 }
 
 .message{
-  background-color: #fae5c7;
+  background-color: #DAE0FF;
 }
 
 .chat{
-  background-color: #85b9a4;
-}
+  background-color: #C9F7BA;}
 
 .sign{
   background-color: #eeeeee;
+}
+
+.card:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .shadowUnderneathObject{

@@ -1,10 +1,14 @@
 <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-    <div class="thumbnail chat clearfix">
+  <div class="col-md-1 col-md-offset-1">
+    <button class="btn btn-default" (click)="backClicked()">   <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      back</button>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-9">
+    <div class="thumbnail chat clearfix card">
       <h3>{{chat.title}} <span><small> created by: {{chat.creator}}</small></span></h3>
       <p>{{chat.description}}</p>
     </div>
-    <app-message class="thumbnail clearfix"></app-message>
+    <app-message></app-message>
   </div>
 </div>
 

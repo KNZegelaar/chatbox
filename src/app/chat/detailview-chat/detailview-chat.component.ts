@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Chat} from "../show-chat/chat.model";
+import {Location} from '@angular/common';
 import {ActivatedRoute} from "@angular/router";
 import {ChatService} from "../../services/chat.services";
 
@@ -14,11 +15,15 @@ import {ChatService} from "../../services/chat.services";
 export class DetailviewChatComponent implements OnInit {
   chat: Chat;
 
-  constructor(private chatService: ChatService, private route: ActivatedRoute) {
+  constructor(private chatService: ChatService, private route: ActivatedRoute, private _location: Location) {
     this.getChat();
   }
 
   ngOnInit() {
+  }
+
+  backClicked() {
+    this._location.back();
   }
 
   getChat(){

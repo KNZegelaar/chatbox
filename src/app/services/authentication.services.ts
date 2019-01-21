@@ -1,4 +1,4 @@
-import {Injectable} from "@angular/core";
+import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Router} from "@angular/router";
 
@@ -17,11 +17,11 @@ export class AuthenticationService{
   }
 
   logout(){
-    localStorage.removeItem("Token");
+    sessionStorage.clear();
     this.router.navigate(['/']);
   }
 
   isAuthenticated(){
-    return localStorage.getItem("Token") != null;
+    return sessionStorage.getItem("Token") != null;
   }
 }

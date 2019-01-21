@@ -25,8 +25,10 @@ export class SigninComponent implements OnInit {
     this.authenticationService.login(this.singinForm.value.username, this.singinForm.value.password)
       .subscribe(
         (response) => {
+          console.log(response);
+          sessionStorage.setItem("Token", response.token);
+          sessionStorage.setItem("Username", this.singinForm.value.username);
           this.router.navigate(['/chat']);
-          localStorage.setItem("Token", response.token);
           this.errorcode = 200;
         },
         (error) => {

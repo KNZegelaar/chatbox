@@ -12,7 +12,7 @@ import {Router} from '@angular/router';
   providers: [AuthenticationService]
 })
 export class SignupComponent implements OnInit {
-  @ViewChild('f') singinForm: NgForm;
+  @ViewChild('f') singupForm: NgForm;
   errorcode: Number;
 
   constructor(private authenticationService: AuthenticationService, private router: Router) { }
@@ -21,11 +21,12 @@ export class SignupComponent implements OnInit {
   }
 
   onRegister(){
-    this.authenticationService.register(this.singinForm.value.username, this.singinForm.value.email, this.singinForm.value.password)
+    this.authenticationService.register(this.singupForm.value.username, this.singupForm.value.email, this.singupForm.value.password)
       .subscribe(
         (response) => {
+          sessionStorage.setItem("Token", response.token);
+          sessionStorage.setItem("Username", this.singupForm.value.username);
           this.router.navigate(['/chat']);
-          localStorage.setItem("Token", response.token);
           this.errorcode = 200;
         },
         (error) => {

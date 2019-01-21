@@ -9,6 +9,9 @@ import {AuthenticationService} from "../services/authentication.services";
 })
 export class NavigationComponent implements OnInit {
   @Input() title: String;
+  username = sessionStorage.getItem("Username");
+
+
   constructor(public authenticationService: AuthenticationService) { }
 
   ngOnInit() {
