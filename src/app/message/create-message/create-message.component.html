@@ -1,5 +1,5 @@
-<div class="thumbnail clearfix createbox card">
-  <form (ngSubmit)="onCreate()" #f="ngForm">
+<div class="clearfix margin createbox card">
+  <form class="col-sm-12" (ngSubmit)="onCreate()" #f="ngForm">
     <div class="form-group">
       <label for="content">Create a new message</label>
       <input type="content" id="content" name="content" ngModel class="form-control" required #content="ngModel"

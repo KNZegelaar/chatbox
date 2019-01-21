@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background-color: #152533;
+}
+
 input.ng-invalid.ng-touched{
   border: 1px solid red;
 }
@@ -7,12 +11,17 @@ input.ng-invalid.ng-touched{
   color: red;
 }
 
+.margin{
+  margin: 0px 0px 15px 0px;
+}
+
 .createbox{
-  background-color: #B0E6E9;
+  padding: 10px 0px;
+  background-color: #8D9BA0;
 }
 
 .createbox.button{
-  background-color: #2C7174;
+  background-color: #174E60;
 }
 
 .message{
@@ -20,7 +29,20 @@ input.ng-invalid.ng-touched{
 }
 
 .chat{
-  background-color: #C9F7BA;}
+  border-color: black;
+  background-color: #174E60;}
+
+h4{
+  color: white;
+}
+
+p.list-group-item-text{
+  color: #c3c3c3;
+}
+
+small{
+  color: lightgray;
+}
 
 .sign{
   background-color: #eeeeee;
