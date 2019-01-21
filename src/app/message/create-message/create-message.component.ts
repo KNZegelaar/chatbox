@@ -22,11 +22,11 @@ export class CreateMessageComponent implements OnInit {
 
   onCreate(){
     this.route.params.subscribe(param => {
-      this.messageService.createMessage(this.createChatForm.value.content,param['chatId'])
+      this.messageService.createMessage(this.createChatForm.value.content, param['chatId'])
         .subscribe(
           (response) => {
-            this.messageCreated.emit();
             this.createChatForm.reset();
+            this.messageCreated.emit();
           },
           (error) => console.log(error)
         );
