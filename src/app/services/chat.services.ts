@@ -16,7 +16,11 @@ export class ChatService {
   }
 
   getAllChats() {
-    return this.http.get<any>(this.apiURL + '/chat/all', this.headers);
+    return this.http.get<any>(this.apiURL + '/chat', this.headers);
+  }
+
+  getMessagesByCheck(_id: String){
+    return this.http.get<any>(this.apiURL + '/message/' + _id, this.headers);
   }
 
   getOneChat(_id: String){

@@ -1,13 +1,13 @@
 export class Message{
-  public  _id: String;
-  public content: String;
-  public user: String;
-  public  timeStamp: String;
+  public  _id: string;
+  public content: string;
+  public user: string;
+  public  timeStamp: Date;
 
-  constructor(_id: String, content: String, user: String, timeStamp: Date){
+  constructor(_id: string, content: string, user: string, timeStamp: Date){
     this._id = _id;
     this.content = content;
     this.user = user;
-    this.timeStamp = timeStamp.toDateString();
+    this.timeStamp = timeStamp;
   }
 }

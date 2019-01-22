@@ -1,15 +1,15 @@
-<div class="clearfix margin createbox card">
+<div class="clearfix createbox card">
     <form class="col-sm-12" (ngSubmit)="onCreate()" #f="ngForm">
       <div class="form-group">
         <label for="name">Name</label>
         <input type="name" id="name" name="name" ngModel class="form-control" required #name="ngModel"
-               placeholder="please enter a name for your new chat">
+               placeholder="please enter a name for your new chat" maxlength="30">
       </div>
       <div class="form-group">
         <label for="description">Description</label>
         <input type="description" id="description" name="description" ngModel class="form-control" required
                #description="ngModel"
-               placeholder="please enter a description for your new chat">
+               placeholder="please enter a description for your new chat" maxlength="200">
       </div>
       <button class="btn btn-primary button" style="width: 100%" type="submit" [disabled]="!f.valid">Create a new chat
       </button>
