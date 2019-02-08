@@ -28,7 +28,12 @@ export class MessageComponent implements OnInit {
       this.chatService.getMessagesByCheck(param['chatId'])
         .subscribe((response) => {
             for(let message of response.Messages){
-              message.user = message.user.username;
+              if(message.user.username === sessionStorage.getItem('Username')){
+                message.user = 'you';
+              } else{
+                message.user = message.user.username;
+
+              }
             }
               this.messages = response.Messages;
           },

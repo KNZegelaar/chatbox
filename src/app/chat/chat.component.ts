@@ -26,7 +26,11 @@ export class ChatComponent implements OnInit {
     this.chatService.getAllChats()
       .subscribe((response) => {
         for(let chat of response.chats){
-          chat.creator = chat.creator.username;
+          if(chat.creator.username === sessionStorage.getItem('Username')){
+            chat.creator = 'you';
+          } else{
+            chat.creator = chat.creator.username;
+          }
         }
         this.chats = response.chats;
       },

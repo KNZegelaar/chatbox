@@ -3,4 +3,8 @@
     <h4>{{chat.title}} <small> created by: {{chat.creator}}</small></h4>
     <p class="list-group-item-text col-12">{{chat.description}}</p>
   </div>
+  <div class="pull-right" *ngIf="chat.creator === 'you'">
+    <span class="glyphicon glyphicon-pencil border" aria-hidden="true"> Edit</span>
+    <span class="glyphicon glyphicon-remove border" aria-hidden="true"> Delete</span>
+  </div>
 </a>
