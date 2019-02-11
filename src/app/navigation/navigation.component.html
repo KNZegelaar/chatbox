@@ -13,8 +13,8 @@
     <ng-template [ngIf]="authenticationService.isAuthenticated()">
       <ul class="nav navbar-nav navbar-right">
         <li><a routerLink="/chat"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  my chats </a></li>
-        <li><a><span class="glyphicon glyphicon-user" aria-hidden="true"> Welcome {{username}}</span></a> </li>
-        <li><a (click)="authenticationService.logout()" style="cursor: pointer"> Logout </a></li>
+        <li><a><span class="glyphicon glyphicon-user" aria-hidden="true"> Welcome {{authenticationService.getUsername()}}</span></a> </li>
+        <li><a (click)="logOut()" style="cursor: pointer"> Logout </a></li>
       </ul>
     </ng-template>
 

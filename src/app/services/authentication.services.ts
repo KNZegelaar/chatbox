@@ -24,4 +24,8 @@ export class AuthenticationService{
   isAuthenticated(){
     return sessionStorage.getItem("Token") != null;
   }
+
+  getUsername(){
+    return sessionStorage.getItem("Username");
+  }
 }
