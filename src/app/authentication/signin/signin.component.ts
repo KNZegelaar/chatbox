@@ -13,7 +13,7 @@ import {Router} from '@angular/router';
 })
 export class SigninComponent implements OnInit {
   @ViewChild('f') singinForm: NgForm;
-  errorcode: Number;
+  errorcode: string;
 
   constructor(private authenticationService: AuthenticationService, private router: Router) {
   }
@@ -29,11 +29,11 @@ export class SigninComponent implements OnInit {
           sessionStorage.setItem("Token", response.token);
           sessionStorage.setItem("Username", this.singinForm.value.username);
           this.router.navigate(['/chat']);
-          this.errorcode = 200;
+          this.errorcode = response.status;
         },
         (error) => {
           console.log(error);
-          this.errorcode = error.code;
+          this.errorcode = error.status;
         }
       );
   }

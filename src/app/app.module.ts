@@ -26,7 +26,7 @@ const appRoutes: Routes = [
   { path: 'login', component: SigninComponent, canActivate: [HideLoginServices]},
   { path: 'register', component: SignupComponent, canActivate: [HideLoginServices] },
   { path: 'chat', component: ChatComponent, canActivate: [AuthenticationGuard]},
-  { path: 'chat/detail/:chatId', component: DetailviewChatComponent, canActivate: [AuthenticationGuard]}
+  { path: 'chat/detail/:chatId', component: DetailviewChatComponent, canActivate: [AuthenticationGuard]},
 ];
 
 @NgModule({
@@ -41,7 +41,7 @@ const appRoutes: Routes = [
     DetailviewChatComponent,
     MessageComponent,
     CreateMessageComponent,
-    ShowMessageComponent
+    ShowMessageComponent,
   ],
   imports: [
     BrowserModule,
