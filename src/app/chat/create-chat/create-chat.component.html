@@ -1,4 +1,5 @@
-<div class="clearfix createbox card">
+<div class="col-lg-offset-11" *ngIf="hidden"> Create Chat <span class="glyphicon glyphicon-plus border add" aria-hidden="true" (click)="show()"></span></div>
+<div *ngIf="!hidden" class="clearfix createbox card">
     <form class="col-sm-12" (ngSubmit)="onCreate()" #f="ngForm">
       <div class="form-group">
         <label for="name">Name</label>

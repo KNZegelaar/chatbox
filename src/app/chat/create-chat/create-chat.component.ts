@@ -13,6 +13,7 @@ import {NgForm} from "@angular/forms";
 export class CreateChatComponent implements OnInit {
   @ViewChild('f') createChatForm: NgForm;
   @Output() chatCreated = new EventEmitter<void>();
+  hidden:boolean = true;
 
   constructor(private chatService: ChatService){ }
 
@@ -23,10 +24,15 @@ export class CreateChatComponent implements OnInit {
     this.chatService.createChat(this.createChatForm.value.name, this.createChatForm.value.description)
       .subscribe(
         (response) => {
+          this.hidden = true;
           this.chatCreated.emit();
         },
         (error) => console.log(error)
       );;
 
+  }
+
+  show(){
+    this.hidden = false;
   }
 }

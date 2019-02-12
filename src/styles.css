@@ -94,6 +94,15 @@ p{
   border-width: 1px;
 }
 
+.border.add{
+  margin: 5px;
+}
+
+.border.add:hover{
+  border-color: green;
+  color: green;
+}
+
 .border.edit:hover{
   border-color: yellow;
   color: yellow;
