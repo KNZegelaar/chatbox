@@ -46,6 +46,10 @@ h4{
   color: white;
 }
 
+h5.alertText{
+  color: yellow;
+}
+
 p.list-group-item-text{
   color: #c3c3c3;
 }
@@ -90,6 +94,15 @@ p{
   border-width: 1px;
 }
 
+.border.edit:hover{
+  border-color: yellow;
+  color: yellow;
+}
+
+.border.delete:hover{
+  border-color: red;
+  color: red;
+}
 
 .form-control{
   color: white;
