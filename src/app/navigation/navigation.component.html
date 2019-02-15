@@ -1,9 +1,17 @@
 <nav class="navbar navbar-inverse navbar-fixed-top shadowUnderneathObject">
   <div class="container-fluid">
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" (click)="isNavbarCollapsed = !isNavbarCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
       <a routerLink="/chat" class="navbar-brand"> <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> <b> {{title}}</b></a>
     </div>
 
+
+    <div class="collapse navbar-collapse" [ngbCollapse]="isNavbarCollapsed">
     <ng-template [ngIf]="!authenticationService.isAuthenticated()">
       <ul class="nav navbar-nav navbar-right">
         <li><a routerLink="/login"> Login </a></li>
@@ -17,6 +25,7 @@
         <li><a (click)="logOut()" style="cursor: pointer"> Logout </a></li>
       </ul>
     </ng-template>
+    </div>
 
   </div>
 </nav>

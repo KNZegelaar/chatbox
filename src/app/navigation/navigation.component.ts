@@ -10,6 +10,7 @@ import {AuthenticationService} from "../services/authentication.services";
 export class NavigationComponent implements OnInit {
   @Input() title: String;
   username = "";
+  isNavbarCollapsed: boolean = true;
 
 
   constructor(public authenticationService: AuthenticationService) { }
