@@ -21,8 +21,8 @@ export class CreateChatComponent implements OnInit, OnChanges {
   type:string = 'create';
 
   buttonText:string;
-  inputTitleText:string;
-  inputDescriptionText:string;
+  inputTitleText:string = '';
+  inputDescriptionText:string = '';
 
   constructor(private chatService: ChatService){
   }
@@ -40,8 +40,8 @@ export class CreateChatComponent implements OnInit, OnChanges {
 
     if (this.type === 'create') {
       this.buttonText = 'Create a new chat';
-      this.inputTitleText = 'please enter a name for your new chat';
-      this.inputDescriptionText = 'please enter a description for your new chat';
+      this.inputTitleText = '';
+      this.inputDescriptionText = '';
     } else if (this.type === 'edit') {
       this.hidden = false;
       this.buttonText = 'Edit chat';

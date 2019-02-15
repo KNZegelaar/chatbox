@@ -7,13 +7,13 @@
       <div class="form-group">
         <label for="name">Name</label>
         <input type="name" id="name" name="name" ngModel class="form-control" required #name="ngModel"
-               placeholder="{{inputTitleText}}" maxlength="30">
+               placeholder="please enter a name for your new chat" maxlength="30" [(ngModel)]="inputTitleText">
       </div>
       <div class="form-group">
         <label for="description">Description</label>
         <input type="description" id="description" name="description" ngModel class="form-control" required
                #description="ngModel"
-               placeholder="{{inputDescriptionText}}" maxlength="200">
+               placeholder="please enter a description for your new chat" maxlength="200" [(ngModel)]="inputDescriptionText">
       </div>
       <button class="btn btn-primary button" style="width: 100%" type="submit" [disabled]="!f.valid">{{buttonText}}
       </button>
