@@ -11,7 +11,7 @@
       <span class="help-block" *ngIf="!password.valid && password.touched">Please enter your password</span>
     </div>
     <div>
-      <span class="alerttext" *ngIf="errorcode == 401">Please enter the right credentials</span>
+      <span class="alerttext" *ngIf="errorcode == '401'">Please enter the right credentials</span>
     </div>
     <button class="btn btn-primary button" type="submit" [disabled]="!f.valid">Sign in</button>
 
