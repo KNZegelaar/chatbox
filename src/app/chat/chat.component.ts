@@ -10,12 +10,17 @@ import {ChatService} from '../services/chat.services';
 })
 export class ChatComponent implements OnInit {
   chats: Chat[];
+  chatEdit: Chat;
 
   constructor(private chatService: ChatService) {
     this.showChats()
   }
 
   ngOnInit() {
+  }
+
+  onChatUpdate(chat: Chat){
+    this.chatEdit = chat;
   }
 
   onChatCreated(){

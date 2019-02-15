@@ -11,20 +11,23 @@ export class ChatService {
   constructor(private http: HttpClient, private router: Router) {
   }
 
-  createChat(title: String, description: String) {
+  createChat(title: string, description: string) {
     return this.http.post<Chat>(this.apiURL + '/chat', {title, description}, this.headers);
+  }
+
+  updateChat(title: string, description: string, id: string) {
+    return this.http.put<Chat>(this.apiURL + '/chat/' + id, {title, description}, this.headers);
   }
 
   getAllChats() {
     return this.http.get<any>(this.apiURL + '/chat', this.headers);
   }
 
-  getMessagesByCheck(_id: String){
+  getMessagesByCheck(_id: string){
     return this.http.get<any>(this.apiURL + '/message/' + _id, this.headers);
   }
 
-  getOneChat(_id: String){
+  getOneChat(_id: string){
     return this.http.get<any>(this.apiURL + '/chat/' + _id, this.headers);
   }
-
 }

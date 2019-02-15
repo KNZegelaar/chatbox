@@ -1,10 +1,10 @@
 export class Chat{
-  public  _id: String;
-  public title: String;
-  public creator: String;
-  public  description: String;
+  public  _id: string;
+  public title: string;
+  public creator: string;
+  public  description: string;
 
-  constructor(_id: String, title: String, creator: String, description: String){
+  constructor(_id: string, title: string, creator: string, description: string){
     this._id = _id;
     this.title = title;
     this.creator = creator;

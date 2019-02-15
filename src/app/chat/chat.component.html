@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-    <app-create-chat (chatCreated)="onChatCreated()"></app-create-chat>
-    <app-show-chat  *ngFor="let chatEl of chats" [chat]="chatEl" ></app-show-chat>
+    <app-create-chat (chatCreated)="onChatCreated()" [chat]="chatEdit"></app-create-chat>
+    <app-show-chat  *ngFor="let chatEl of chats" [chat]="chatEl" (chatUpdate)="onChatUpdate($event)"></app-show-chat>
   </div>
 </div>

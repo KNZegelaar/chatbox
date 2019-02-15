@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Chat} from "./chat.model";
 
 @Component({
@@ -10,11 +10,17 @@ import {Chat} from "./chat.model";
 })
 export class ShowChatComponent implements OnInit {
   @Input() chat: Chat;
+  @Output() chatUpdate = new EventEmitter<Chat>();
 
   constructor() {
   }
 
   ngOnInit() {
   }
+
+  onEdit () {
+    this.chatUpdate.emit(this.chat);
+  }
+
 
 }

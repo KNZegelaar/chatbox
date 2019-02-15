@@ -1,6 +1,7 @@
-import {Component, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChange, ViewChild} from '@angular/core';
 import {ChatService} from "../../services/chat.services";
 import {NgForm} from "@angular/forms";
+import {Chat} from "../show-chat/chat.model";
 
 @Component({
   selector: 'app-create-chat',
@@ -10,17 +11,52 @@ import {NgForm} from "@angular/forms";
     './create-chat.component.css'],
   providers: [ChatService]
 })
-export class CreateChatComponent implements OnInit {
+export class CreateChatComponent implements OnInit, OnChanges {
   @ViewChild('f') createChatForm: NgForm;
   @Output() chatCreated = new EventEmitter<void>();
-  hidden:boolean = true;
+  @Input() chat: Chat;
 
-  constructor(private chatService: ChatService){ }
+  hidden:boolean = true;
+  type:string = 'create';
+
+  buttonText:string;
+  inputTitleText:string;
+  inputDescriptionText:string;
+
+  constructor(private chatService: ChatService){
+  }
+
+  ngOnChanges(changes: {[propKey: string]: SimpleChange}){
+    console.log(changes.chat.currentValue);
+
+    if (this.chat !== undefined) {
+      this.type = 'edit';
+    }
+
+    if (this.type === 'create') {
+      this.buttonText = 'Create a new chat';
+      this.inputTitleText = 'please enter a name for your new chat';
+      this.inputDescriptionText = 'please enter a description for your new chat';
+    } else if (this.type === 'edit') {
+      this.hidden = false;
+      this.buttonText = 'Edit chat';
+      this.inputTitleText = this.chat.title;
+      this.inputDescriptionText = this.chat.description;
+    }
+  }
 
   ngOnInit() {
   }
 
-  onCreate(){
+  createOrUpdate(type: string){
+    if (type === 'create'){
+      this.Create();
+    } else if (type === 'edit'){
+      this.Edit();
+    }
+  }
+
+  Create(){
     this.chatService.createChat(this.createChatForm.value.name, this.createChatForm.value.description)
       .subscribe(
         (response) => {
@@ -28,8 +64,19 @@ export class CreateChatComponent implements OnInit {
           this.chatCreated.emit();
         },
         (error) => console.log(error)
-      );;
+      );
 
+  }
+
+  Edit(){
+    this.chatService.updateChat(this.createChatForm.value.name, this.createChatForm.value.description, this.chat._id)
+      .subscribe(
+        (response) => {
+          this.hidden = true;
+          this.chatCreated.emit();
+        },
+        (error) => console.log(error)
+      );
   }
 
   show(){

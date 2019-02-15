@@ -1,18 +1,18 @@
 <div class="col-lg-offset-11" *ngIf="hidden"> Create Chat <span class="glyphicon glyphicon-plus border add" aria-hidden="true" (click)="show()"></span></div>
 <div *ngIf="!hidden" class="clearfix createbox card">
-    <form class="col-sm-12" (ngSubmit)="onCreate()" #f="ngForm">
+    <form class="col-sm-12" (ngSubmit)="createOrUpdate(type)" #f="ngForm">
       <div class="form-group">
         <label for="name">Name</label>
         <input type="name" id="name" name="name" ngModel class="form-control" required #name="ngModel"
-               placeholder="please enter a name for your new chat" maxlength="30">
+               placeholder="{{inputTitleText}}" maxlength="30">
       </div>
       <div class="form-group">
         <label for="description">Description</label>
         <input type="description" id="description" name="description" ngModel class="form-control" required
                #description="ngModel"
-               placeholder="please enter a description for your new chat" maxlength="200">
+               placeholder="{{inputDescriptionText}}" maxlength="200">
       </div>
-      <button class="btn btn-primary button" style="width: 100%" type="submit" [disabled]="!f.valid">Create a new chat
+      <button class="btn btn-primary button" style="width: 100%" type="submit" [disabled]="!f.valid">{{buttonText}}
       </button>
     </form>
 </div>
