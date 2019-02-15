@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChange,
 import {ChatService} from "../../services/chat.services";
 import {NgForm} from "@angular/forms";
 import {Chat} from "../show-chat/chat.model";
+import {getRawMessage} from "codelyzer/angular/styles/cssLexer";
 
 @Component({
   selector: 'app-create-chat',
@@ -27,10 +28,14 @@ export class CreateChatComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: {[propKey: string]: SimpleChange}){
-    console.log(changes.chat.currentValue);
+   this.createBox();
+  }
 
+  createBox(){
     if (this.chat !== undefined) {
       this.type = 'edit';
+    } else if(this.chat === undefined) {
+      this.type = 'create';
     }
 
     if (this.type === 'create') {
@@ -81,5 +86,11 @@ export class CreateChatComponent implements OnInit, OnChanges {
 
   show(){
     this.hidden = false;
+  }
+
+  close(){
+    this.hidden = true;
+    this.chat = undefined;
+    this.createBox();
   }
 }

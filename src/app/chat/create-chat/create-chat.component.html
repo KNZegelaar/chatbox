@@ -1,6 +1,9 @@
 <div class="col-lg-offset-11" *ngIf="hidden"> Create Chat <span class="glyphicon glyphicon-plus border add" aria-hidden="true" (click)="show()"></span></div>
 <div *ngIf="!hidden" class="clearfix createbox card">
     <form class="col-sm-12" (ngSubmit)="createOrUpdate(type)" #f="ngForm">
+      <div class="pull-right">
+        <span class="glyphicon glyphicon-remove" style="cursor: pointer" aria-hidden="true" (click)="close()"></span>
+      </div>
       <div class="form-group">
         <label for="name">Name</label>
         <input type="name" id="name" name="name" ngModel class="form-control" required #name="ngModel"
