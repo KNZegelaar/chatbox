@@ -16,7 +16,7 @@ app.use(compression());
 //
 // Replace the name below to match your own "defaultProject" value!
 //
-const appname = 'chatbox2019';
+const appname = 'chatbox';
 
 // Point static path to dist
 app.use(express.static(path.join(__dirname, 'dist', appname)));
@@ -34,4 +34,4 @@ app.set('port', process.env.PORT || 4200);
 // Create HTTP server.
 const server = http.createServer(app);
 // Listen on provided port, on all network interfaces.
-server.listen(app.get('port'), () => console.log(`Angular app \'${appname}\' running on port ${port}`));
+server.listen(app.get('port'), () => console.log(`Angular app \'${appname}\' running on port ` + app.get('port')));

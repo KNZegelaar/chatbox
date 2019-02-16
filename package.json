@@ -55,5 +55,17 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0"
   },
-  "heroku-run-build-script": true
+  "heroku-run-build-script": true,
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KNZegelaar/chatbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KNZegelaar/chatbox/issues"
+  },
+  "homepage": "https://github.com/KNZegelaar/chatbox#readme"
 }
