@@ -5,6 +5,6 @@
   </div>
   <div class="pull-right" *ngIf="chat.creator === 'you'">
     <span class="glyphicon glyphicon-pencil border edit" style="cursor: pointer"  aria-hidden="true" (click)="onEdit()"></span>
-    <span class="glyphicon glyphicon-remove border delete" style="cursor: pointer" aria-hidden="true"></span>
+    <app-delete-chat [chat]="chat"></app-delete-chat>
   </div>
 </a>

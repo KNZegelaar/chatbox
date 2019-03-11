@@ -19,6 +19,10 @@ export class ChatService {
     return this.http.put<Chat>(this.apiURL + '/chat/' + id, {title, description}, this.headers);
   }
 
+  deleteChat(id: string) {
+    return this.http.delete<Chat>(this.apiURL + '/chat/' + id, this.headers);
+  }
+
   getAllChats() {
     return this.http.get<any>(this.apiURL + '/chat', this.headers);
   }
