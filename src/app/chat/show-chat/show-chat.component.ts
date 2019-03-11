@@ -11,6 +11,7 @@ import {Chat} from "./chat.model";
 export class ShowChatComponent implements OnInit {
   @Input() chat: Chat;
   @Output() chatUpdate = new EventEmitter<Chat>();
+  @Output() chatDelete = new EventEmitter<Chat>();
 
   constructor() {
   }
@@ -20,6 +21,10 @@ export class ShowChatComponent implements OnInit {
 
   onEdit () {
     this.chatUpdate.emit(this.chat);
+  }
+
+  onDelete () {
+    this.chatDelete.emit((this.chat));
   }
 
 

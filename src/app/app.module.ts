@@ -18,7 +18,6 @@ import { MessageComponent } from './message/message.component';
 import { CreateMessageComponent } from './message/create-message/create-message.component';
 import { ShowMessageComponent } from './message/show-message/show-message.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { DeleteChatComponent } from './chat/delete-chat/delete-chat.component';
 
 
 //TODO: canActivate: [true] --> this makes sure the page cannot be loaded when the user isn't logged in.
@@ -43,7 +42,6 @@ const appRoutes: Routes = [
     MessageComponent,
     CreateMessageComponent,
     ShowMessageComponent,
-    DeleteChatComponent,
   ],
   imports: [
     BrowserModule,

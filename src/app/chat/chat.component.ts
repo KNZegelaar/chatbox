@@ -27,6 +27,18 @@ export class ChatComponent implements OnInit {
     this.showChats();
   }
 
+  onChatDelete(chat: Chat){
+    console.log("chat deleted");
+    this.chatService.deleteChat(chat._id)
+      .subscribe((response) => {
+        this.showChats();
+        console.log(response);
+      },
+        (error) => {
+        console.log(error);
+        });
+  }
+
   showChats(){
     this.chatService.getAllChats()
       .subscribe((response) => {
