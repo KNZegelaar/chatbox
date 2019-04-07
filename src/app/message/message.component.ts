@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Message} from "./message.model";
 import {ChatService} from "../services/chat.services";
+import {MessageService} from "../services/message.services";
 import {ActivatedRoute} from "@angular/router";
 
 @Component({
@@ -11,7 +12,7 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class MessageComponent implements OnInit {
   messages: Message[];
-  constructor(private chatService: ChatService, private route: ActivatedRoute) {
+  constructor(private chatService: ChatService, private messageService: MessageService, private route: ActivatedRoute) {
     this.showMessages();
   }
 
@@ -21,6 +22,17 @@ export class MessageComponent implements OnInit {
 
   onMessageCreated(){
     this.showMessages();
+  }
+
+  onMessageDelete(message: Message){
+    this.messageService.deleteMessage(message._id)
+      .subscribe((response) => {
+          this.showMessages();
+          console.log(response);
+        },
+        (error) => {
+          console.log(error);
+        });
   }
 
   showMessages(){

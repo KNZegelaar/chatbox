@@ -1,6 +1,5 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
-import {Router} from "@angular/router";
 import {Message} from "../message/message.model";
 
 @Injectable()
@@ -11,7 +10,11 @@ export class MessageService {
   constructor(private http: HttpClient) {
   }
 
-  createMessage(content: String, chatId: String) {
+  createMessage(content: string, chatId: string) {
     return this.http.post<Message>(this.apiURL + '/message/' + chatId, {content}, this.headers)
+  }
+
+  deleteMessage(messageId: string) {
+    return this.http.delete<Message>(this.apiURL + '/message/' + messageId, this.headers)
   }
 }

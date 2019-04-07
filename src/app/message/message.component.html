@@ -1,4 +1,3 @@
-<!--TODO: <img *ngIf="messages.length === 0" src="../assets/loading.gif" alt="Loading.." class="img-responsive" style="max-height: 50px"/>-->
 <h5 class="alertText" *ngIf="messages.length === 0"> There are no messages in this chat yet, be the first to write one.</h5>
-<app-show-message *ngFor="let messageEl of messages" [message]="messageEl">loading..</app-show-message>
+<app-show-message *ngFor="let messageEl of messages" [message]="messageEl" (messageDelete)="onMessageDelete($event)">loading..</app-show-message>
 <app-create-message (messageCreated)="onMessageCreated()"></app-create-message>
