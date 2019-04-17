@@ -11,10 +11,19 @@ import {Message} from "../message.model";
 export class ShowMessageComponent implements OnInit {
   @Input() message: Message;
   @Output() messageDelete = new EventEmitter<Message>();
+  editMessage: boolean = false;
+  deleteClassValue: string = "";
 
   constructor() { }
 
   ngOnInit() {
+    if (this.message.content === 'This message has been deleted') {
+      this.deleteClassValue = "deletedMessage";
+    }
+  }
+
+  onEdit() {
+    this.editMessage = true;
   }
 
   onDelete () {

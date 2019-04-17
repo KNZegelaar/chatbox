@@ -14,6 +14,10 @@ export class MessageService {
     return this.http.post<Message>(this.apiURL + '/message/' + chatId, {content}, this.headers)
   }
 
+  editMessage(content: string, messageId: string) {
+    return this.http.put<Message>(this.apiURL + '/message/' + messageId, {content}, this.headers)
+  }
+
   deleteMessage(messageId: string) {
     return this.http.delete<Message>(this.apiURL + '/message/' + messageId, this.headers)
   }

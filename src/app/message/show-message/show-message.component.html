@@ -1,11 +1,10 @@
 
 <div class="thumbnail clearfix message card">
   <p><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{message.user}} <span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{message.timeStamp}}</p>
-  <h4 *ngIf="message.content !== 'This message has been deleted'">{{message.content}}</h4>
-  <h4 class="deletedMessage" *ngIf="message.content === 'This message has been deleted'">{{message.content}}</h4>
+  <h4 [ngClass]="deleteClassValue">{{message.content}}</h4>
 
   <div class="pull-right" *ngIf="message.user === 'you'">
-    <span class="glyphicon glyphicon-pencil border edit" style="cursor: pointer"  aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-pencil border edit" style="cursor: pointer"  aria-hidden="true" (click)="onEdit()"></span>
     <span class="glyphicon glyphicon-remove border delete" style="cursor: pointer"  aria-hidden="true" (click)="onDelete()"></span>
   </div>
 </div>
