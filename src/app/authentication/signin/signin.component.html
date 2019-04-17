@@ -13,7 +13,7 @@
     <div>
       <span class="alerttext" *ngIf="errorcode == '401'">Please enter the right credentials</span>
     </div>
-    <button class="btn btn-primary button" type="submit" [disabled]="!f.valid">Sign in</button>
+    <button class="btn btn-primary button" type="submit" [disabled]="!f.valid">Sign in <img src="../../../assets/loading.gif" class="smallImage" *ngIf="showLoadingGif"></button>
 
     <p><br/>Don't have an account yet? Please <a routerLink="/register" class="text-white"> sign up</a>.</p>
   </form>

@@ -9,6 +9,11 @@ input.ng-invalid.ng-touched{
   border: 1px solid red;
 }
 
+.smallImage{
+  width: 20px;
+  height: 20px;
+}
+
 .deletedMessage{
   color: red;
   font-size: small;

@@ -14,6 +14,7 @@ import {Router} from '@angular/router';
 export class SigninComponent implements OnInit {
   @ViewChild('f') singinForm: NgForm;
   errorcode: string;
+  showLoadingGif: boolean = false;
 
   constructor(private authenticationService: AuthenticationService, private router: Router) {
   }
@@ -22,6 +23,7 @@ export class SigninComponent implements OnInit {
   }
 
   onLogin() {
+    this.showLoadingGif = true;
     this.authenticationService.login(this.singinForm.value.username, this.singinForm.value.password)
       .subscribe(
         (response) => {
@@ -29,10 +31,12 @@ export class SigninComponent implements OnInit {
           sessionStorage.setItem("Token", response.token);
           sessionStorage.setItem("Username", this.singinForm.value.username);
           this.router.navigate(['/chat']);
+          this.showLoadingGif = false;
           this.errorcode = response.status;
         },
         (error) => {
           console.log(error);
+          this.showLoadingGif = false;
           this.errorcode = error.status;
         }
       );
