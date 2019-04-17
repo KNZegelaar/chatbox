@@ -22,8 +22,13 @@ export class ShowMessageComponent implements OnInit {
     }
   }
 
-  onEdit() {
+  startEdit() {
     this.editMessage = true;
+  }
+
+
+  onEdit() {
+    this.editMessage = false;
   }
 
   onDelete () {
