@@ -1,5 +1,6 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
 import {Message} from "../message.model";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-show-message',
@@ -9,8 +10,10 @@ import {Message} from "../message.model";
     './show-message.component.css']
 })
 export class ShowMessageComponent implements OnInit {
+  @ViewChild('f') messageContentForm: NgForm;
   @Input() message: Message;
   @Output() messageDelete = new EventEmitter<Message>();
+  @Output() messageEdit = new EventEmitter<Message>();
   editMessage: boolean = false;
   deleteClassValue: string = "";
 
@@ -28,6 +31,13 @@ export class ShowMessageComponent implements OnInit {
 
 
   onEdit() {
+    this.editMessage = false;
+    this.message.content = this.messageContentForm.value.messageEditContent;
+    console.log(this.message);
+    this.messageEdit.emit((this.message))
+  }
+
+  onEditCancel(){
     this.editMessage = false;
   }
 

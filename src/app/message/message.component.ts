@@ -35,6 +35,16 @@ export class MessageComponent implements OnInit {
         });
   }
 
+  onMessageEdit(message: Message) {
+    this.messageService.editMessage(message.content, message._id)
+      .subscribe((response) => {
+        this.showMessages();
+      },
+        (error) => {
+        console.log(error);
+        })
+  }
+
   showMessages(){
     this.route.params.subscribe(param => {
       this.chatService.getMessagesByCheck(param['chatId'])
